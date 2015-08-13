@@ -30,8 +30,10 @@ int factorialEndZeros2(int n)
 	int nums = 0;
 	while (n)
 	{
-		nums += n / 5;
+		//nums += n / 5;
+		//n /= 5;
 		n /= 5;
+		nums += n;//减少一次计算
 	}
 	return nums;
 }
