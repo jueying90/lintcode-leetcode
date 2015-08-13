@@ -5,8 +5,10 @@ int factorialBitOnePosition(int n)
 	int pos = 0;
 	while (n)
 	{
-		pos += n >> 1;
-		n = n >> 1;
+		// pos += n >> 1;
+		// n = n >> 1;
+		n >>= 1;
+		pos += n;
 	}
 	return pos+1;
 }
